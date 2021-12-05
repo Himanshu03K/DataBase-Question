@@ -16,7 +16,7 @@ public class Test {
         Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/E2data", "root", "");
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
-        Pattern p = Pattern.compile("[a-zA-Z0-9._]+@[gmail | yahoo |redif]+.com");
+        Pattern p = Pattern.compile("[a-zA-Z0-9._]+@(gmail|yahoo|rediffmail)+.com");
         Pattern p1 = Pattern.compile("(0|91)?[96][0-9]{9}");
         Matcher m = p.matcher(str);
         Matcher m1 = p1.matcher(str);
